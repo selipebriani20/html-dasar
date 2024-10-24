@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUGAS CSS</title>
+    <style>
+        body {
+            display: flex;                                                      /* mengaktifkan flexbox */
+            flex-direction: column;                                             /* mengatur elemen dalam kolom */
+            justify-content: center;                                            /* mengatur posisi horizontal ke tengah */
+            align-items: center;                                                /* mengatur posisi vertikal ke tengah */
+            height: 100vh;                                                      /* menggunakan tinggi viewport */
+            margin: 0;                                                          /* menghilangkan margin default */
+            background-color: palevioletred;                                  /* warna latar belakang */
+            padding: 20px;
+            font-family:Georgia, 'Times New Roman', Times, serif'      
+            
+        }
+        table {
+            width: 500px;                                                        /* lebar tabel */
+            background-color: pink;                                           /* warna latar belakang tabel */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);                          /* bayangan tabel */
+                            
+        }
+
+        #box-image {
+            display: flex;                                                      /* mengaktifkan flexbox */
+            justify-content:center;                                            /* mengatur posisi horizontal */
+            align-items: center;                                                /* mengatur posisi vertikal */
+            margin-bottom: 50px;                                                /* jarak antara gambar dan tabel */
+            
+        }
+        img {
+            border: 2px solid white;                                          /* menambahkan border */
+            border-radius: 50px;                                                /* sudut membulat */
+            padding:6px;                                                        /* ruang di sekitar gambar */
+            width:200px;                                                        /* ukuran gambar profil */
+            height:300px;                                                       /* mengatur tinggi otomatis */
+            margin-bottom: 20px;
+            object-fit: cover;
+            display: block;                                                      /* membuat gambar sebagai elemen block */
+            margin-left: auto;                                                           /* mengatur margin kiri otomatis */
+            margin-right: auto;                                                          /* mengatur margin kanan otomatis */
+
+        }
+        
+        table,th,td {
+            border:2px solid white;
+            padding: 20px;
+            
+        }
+
+        td {
+            text-align: left;                                                   /* tampilan rata kiri pada teks */
+        }
+        th {
+            font-weight: bold;
+        }
+
+        ul{
+            list-style-type: square;
+            padding-left: 50px
+        }
+
+        botton {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 20px;
+            background-color: pink;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size:30px;
+        }
+        
+        button:hover {
+            background-color: blue;
+            color: white;
+        }
+
+    </style>
+</head>
+<h1>BIODATA DIRI</h1>
+    <div class="container">
+        <img src="file:///D:/TUGAS%20SELI%20SMST%207/pp.jpeg" alt="Profile Picture" class="profile-pic">
+
+        <!-- tabel biodata -->
+        <table>
+            <tr>
+                <td>NAMA</td>
+                <td>:</td>
+                <td>SELI PEBRIANI</td>
+            </tr>
+            <tr>
+                <td>NIM</td>
+                <td>:</td>
+                <td>D212111016</td>
+            </tr>
+            <tr>
+                <td>AlAMAT</td>
+                <td>:</td>
+                <td>BANDUNG</td>
+            </tr>
+            <tr>
+                <td>HOBI</td>
+                <td>:</td>
+                <td>
+                    <ul>
+                        <li>MEMBACA</li>
+                        <li>MENONTON</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        </div>
+        
+
+        <!-- button simpan -->
+        <button class="button" onclick="simpanData()">SIMPAN</button>
+
+    <script>
+        function simpanData() {
+            alert('Data berhasil disimpan');
+        }
+    </script>
+</body>
+</html>
